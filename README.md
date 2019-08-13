@@ -23,14 +23,14 @@ Focus styles are usually implemented by the browser as a blue outline around any
 *Don't* 🚫
 ```CSS
 *:focus {
-	outline: none;
+  outline: none;
 }
 ```
 
 ## Make DOM order match visual order
 Ensuring the DOM order matches the visual order of the page is important for assistive technologies to be able to read out the content on the page. It is also important to maintain tab order. Make sure the page’s structure is well defined in HTML and don’t get in the habit of using CSS to change the ordering of elements on the page.
 
-A classic example of this is action buttons pulled to the right of a header row. The way this is often done is by using `float: right` on each button (or a bootstrap helper class like `.pull-right`). The problem is that `float: right` will place the first item as the right-most element, the second item as the second right-most, etc., forcing the developer to list the buttons in reverse order. Doing this would cause the tabbing order to be reversed and can cause confusion for people using a screen reader.
+A classic example of this is action buttons pulled to the right of a header row. The way this is often done is by using `float: right` on each button (or a bootstrap helper class like `.pull-right`), but this method forces the developer to list the buttons in reverse order.
 
 *Don't* 🚫
 ```HTML
@@ -42,9 +42,9 @@ A classic example of this is action buttons pulled to the right of a header row.
 *Do* ✅
 ```HTML
 <span class="pull-right">
-	<button>First</button>
-	<button>Second</button>
-	<button>Third</button>
+  <button>First</button>
+  <button>Second</button>
+  <button>Third</button>
 </span>
 ```
 
@@ -75,7 +75,7 @@ Use ARIA roles to add semantic meaning to your markup, but **only when you canno
 *Do* ✅
 ```HTML
 <div role="tab">
-	<h2>heading tab</h2>
+  <h2>heading tab</h2>
 </div>
 ```
 
@@ -107,8 +107,8 @@ User name <input type="text">
 ```HTML
 <!-- wrap the element with a label -->
 <label>
-	User name
-	<input type="text">
+  User name
+  <input type="text">
 </label>
 ```
 ```HTML
