@@ -151,11 +151,25 @@ Decorative icons are icons that are solely for visual delight and provide no add
 <span class="fa fa-save" aria-hidden="true"></span> Save
 ```
 
+> ### `<span>` or `<i>` for icons?
+> This is a [hotly debated topic](https://stackoverflow.com/questions/11135261/should-i-use-i-tag-for-icons-instead-of-span). Some say the `<i>` tag should be reserved for italic text, as per the spec. Some say `<span>` has no semantics and so isn't any improvement. My advice is to just stay consistent.
+
 ## Use of color
-Color cannot be used as the only visual means of conveying information. For example, don't just use a red outline on invalid form fields as those fields will become indistinguishable to colorblind users.
+Color cannot be used as the only visual means of conveying information. For example, don't just use a red outline on invalid form fields as those fields will become indistinguishable to colorblind users. Instead, consider adding an icon or some other visual indicator in addition to color.
+
+*Don't* 🚫
+```HTML
+<input type="text" style="border-color: red">
+```
+
+*Do* ✅
+```HTML
+<input type="text" style="border-color: red">
+<span class="fa fa-exclamation-triangle" style="color: red"></span>
+```
 
 ## Contrast
-The contrast between text and its background should be at least 4.5:1 for normal size text and 3:1 for large scale text.
+The contrast between text and its background should be at least 4.5:1 for normal size text and 3:1 for large scale text. You can test color contrast using the [WebAIM Contrast Checker tool](https://webaim.org/resources/contrastchecker/) or by using a browser extension.
 
 ## ARIA Live Regions
 Use `aria-Live` to define a region of dynamic content and tell the screen reader to announce updates to the content within in the region.
