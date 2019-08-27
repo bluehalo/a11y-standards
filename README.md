@@ -14,6 +14,7 @@ Every image in your app needs to have an alt text attribute describing what the 
 <img src="./logo-horizontal-white.png" alt="Firehawk Logo"/>
 ```
 ```HTML
+<!-- empty alt text attribute is acceptable for decorative images -->
 <img src="/my/cool/image.png" alt="">
 ```
 
