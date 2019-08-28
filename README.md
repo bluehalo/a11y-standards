@@ -3,6 +3,22 @@ Accessibility, sometimes abbreviated as a11y, is the principle of designing and 
 
 This guide includes best practices and standards for developing websites and web applications with accessibility in mind.
 
+## Table of contents
+- [Alt Text for Images](#alt-text-for-images)
+- [Focus styles](#focus-styles)
+- [Make DOM order match visual order](#make-dom-order-match-visual-order)
+- [Write semantic markup](#write-semantic-markup)
+- [ARIA Roles](#aria-roles)
+- [Accessible Names](#accessible-names)
+- [Icons](#icons)
+- [Use of color](#use-of-color)
+- [Contrast](#contrast)
+- [ARIA Live Regions](#aria-live-regions)
+- [Links](#links)
+- [Headings](#headings)
+- [Tables](#tables)
+- [A11Y Resources](#a11y-resources)
+
 ## Alt Text for Images
 Every image in your app needs to have an alt text attribute describing what the image is showing. If the image is decorative only and doesn’t convey meaning or provide context, an empty alt attribute may be used to tell assistive technologies such as screen readers that the image may be ignored.
 
