@@ -342,6 +342,7 @@ Assistive technologies rely on reading and parsing markup alone in order to conv
 * [Semantic markup example](https://codepen.io/kschmincke/pen/xxKdPYW)
 
 ## A11Y Resources
+* [Accessibility Cheatsheet]()
 * [I Used The Web For A Day Using A Screen Reader](https://www.smashingmagazine.com/2018/12/voiceover-screen-reader-web-apps/)
 * [I Used The Web For A Day With Just A Keyboard](https://www.smashingmagazine.com/2018/07/web-with-just-a-keyboard/)
 * [WCAG Standards](https://www.w3.org/WAI/standards-guidelines/wcag/)
